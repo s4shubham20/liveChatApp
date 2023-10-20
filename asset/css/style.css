@@ -1,0 +1,131 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#container{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+}
+#left_panel{
+    height: 100vh;
+    background: #28344e;
+    text-align: center;
+    flex: 2;
+}
+#profile_img{
+    background: rgb(68, 66, 66);
+    border: solid thin white;
+    width: 80%;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 50%;
+}
+#left_panel #label{
+    background: #2e3540;
+    margin: 40px 5px 0px;
+}
+#left_panel h5{
+    color: white;
+    opacity: 0.5;
+}
+#left_panel #label label{
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: solid thin #ffffff55;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 3s ease-in-out;
+}
+#left_panel #label label:hover{
+    background: #a6acb9e8;
+}
+#label label i{
+    float: right;
+}
+#right_panel{
+    height: 100vh;
+    background: #4a596e;;
+    flex: 4;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    height: 70px;
+    border: 1px solid #F4EEFF;
+    border-radius: 6px;
+    margin: 5px 15px;
+    background: #F5F8FF;
+    box-shadow: 2px 2px 10px #F4EEFF;
+}
+#profile-pic{
+    display: flex;
+}
+#profile-pic img{
+    width: 50px;
+    border: 3px solid #4B0973;
+    border-radius: 50%;
+}
+#search-icon ul{
+    display: flex;
+}
+#search-icon ul li{
+    list-style: none;
+    padding: 6px 7px;
+    border: 1px solid #4B0973;
+    background: #C8C8D8;
+    margin: 0px 3px;
+    border-radius: 50%;
+}
+#search-icon li:hover {
+    background: #4B0973;
+    border: 1px solid #c1a6a6;
+    cursor: pointer;
+}
+#search-icon ul li i{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+#search-icon ul li i:hover{
+    color: white;
+}
+#user-name{
+    margin-left:15px;
+}
+#user-name p{
+    color: #4B0973;
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 700;
+}
+#user-name .online{
+    color: green;
+    margin: 0px;
+    font-weight: 500;
+}
+#inner_container{
+    display: flex;
+    height: 90vh;
+}
+#inner_container input{
+    display: none;
+}
+#inner_left_panel{
+    background: #373c47;
+    flex: 2;
+}
+#inner_right_panel{
+    background: #f2f5f8;
+    flex: 4;
+    transition: all 3s ease-in-out;
+}
+#contact:checked ~ #inner_right_panel,#setting:checked ~ #inner_right_panel{
+    flex: 0;
+}
+.text-light{
+    color:white;
+}
